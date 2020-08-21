@@ -1,0 +1,67 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 217
+  ClientWidth = 703
+  Color = clWindow
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 104
+    Top = 43
+    Width = 42
+    Height = 13
+    Caption = 'Filename'
+  end
+  object Label2: TLabel
+    Left = 104
+    Top = 91
+    Width = 74
+    Height = 13
+    Caption = 'Calculated MD5'
+  end
+  object Label3: TLabel
+    Left = 104
+    Top = 139
+    Width = 69
+    Height = 13
+    Caption = 'Expected MD5'
+  end
+  object edtFilename: TEdit
+    Left = 216
+    Top = 40
+    Width = 275
+    Height = 21
+    TabOrder = 0
+  end
+  object edtMD5: TEdit
+    Left = 216
+    Top = 88
+    Width = 275
+    Height = 21
+    TabOrder = 1
+  end
+  object edtExpected: TEdit
+    Left = 216
+    Top = 136
+    Width = 275
+    Height = 21
+    TabOrder = 2
+  end
+  object Button1: TButton
+    Left = 497
+    Top = 38
+    Width = 75
+    Height = 25
+    Caption = 'Select File'
+    TabOrder = 3
+    OnClick = Button1Click
+  end
+end
