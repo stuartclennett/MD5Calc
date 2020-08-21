@@ -1,0 +1,81 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  BorderStyle = bsDialog
+  Caption = 'MD5 File Calculator'
+  ClientHeight = 197
+  ClientWidth = 576
+  Color = clWindow
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 14
+  object Label1: TLabel
+    Left = 40
+    Top = 35
+    Width = 47
+    Height = 14
+    Caption = 'Filename'
+  end
+  object Label2: TLabel
+    Left = 40
+    Top = 83
+    Width = 83
+    Height = 14
+    Caption = 'Calculated MD5'
+  end
+  object Label3: TLabel
+    Left = 40
+    Top = 131
+    Width = 80
+    Height = 14
+    Caption = 'Expected MD5'
+  end
+  object edtFilename: TEdit
+    Left = 152
+    Top = 32
+    Width = 275
+    Height = 22
+    TabOrder = 0
+    OnChange = edtFilenameChange
+  end
+  object edtMD5: TEdit
+    Left = 152
+    Top = 80
+    Width = 356
+    Height = 23
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Courier New'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+  end
+  object edtExpected: TEdit
+    Left = 152
+    Top = 128
+    Width = 356
+    Height = 23
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Courier New'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+  end
+  object Button1: TButton
+    Left = 433
+    Top = 30
+    Width = 75
+    Height = 25
+    Caption = 'Select File'
+    TabOrder = 3
+    OnClick = Button1Click
+  end
+end
